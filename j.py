@@ -1279,12 +1279,7 @@ with tab1:
             key="inspection_date"
         )
         
-        # Time input
-        inspection_time = st.time_input(
-            f"{ICONS['time']} Inspection Time",
-            datetime.now().time(),
-            key="inspection_time"
-        )
+
     
     with col3:
         # Combine date and time
