@@ -22,12 +22,12 @@ from io import BytesIO
 load_dotenv()
 
 # Initialize OpenAI client
-#openai_api_key = os.getenv("OPENAI_API_KEY")
-#if openai_api_key:
-    #openai_client = OpenAI(api_key=openai_api_key)
-#else:
-    #openai_client = None
-    #st.warning("OpenAI API key not found. Translation features will be limited.")
+openai_api_key = os.getenv("OPENAI_API_KEY")
+if openai_api_key:
+    openai_client = OpenAI(api_key=openai_api_key)
+else:
+    openai_client = None
+    st.warning("OpenAI API key not found. Translation features will be limited.")
 
 # Page config
 st.set_page_config(
